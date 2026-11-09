@@ -20,10 +20,10 @@ Requirements
 
 New Features
 ~~~~~~~~~~~~
-* :py:meth:`NetCDFTimeConverter.convert` can now handle a string as input. This allows to set
-  :py:meth:`ax.set_xlim` etc. with a datetime-like string, such as ``"2014"``, ``"2014-02"``,
+* :py:meth:`NetCDFTimeConverter.convert` can now handle a string as input. This allows using
+  :py:meth:`matplotlib.axes.Axes.set_xlim` etc. with datetime-like strings, such as ``"2014"``, ``"2014-02"``,
   or ``"2014-02-05 15:30"``. Note that incomplete dates are rounded down - so ``"2014"``
-  is equivalent to ``"2014-01-01 00:00:00.000000"`` (:pull:`521`).
+  is equivalent to ``"2014-01-01 00:00:00.000000"`` (:issue:`178`, :pull:`521`).
   By `Mathias Hauser`_.
 
 * ``nc-time-axis`` is now easily citable thanks to the addition of its ``CITATION.cff``
